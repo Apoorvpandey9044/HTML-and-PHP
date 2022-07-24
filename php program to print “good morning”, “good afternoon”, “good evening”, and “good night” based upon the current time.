@@ -1,0 +1,28 @@
+
+
+<html>
+<body>
+
+<?php
+// Timezone is Asia/Calcutta
+date_default_timezone_set('Asia/Calcutta');
+
+// 24-hour format of an hour without leading zeros (0 through 23)
+$Hour = date('H');
+
+if ( $Hour >= 4 && $Hour <= 12 ) {
+    echo "Good Morning";
+} else if ( $Hour > 12 && $Hour <= 16 ) {
+    echo "Good Afternoon";
+} else if ( $Hour > 16 || $Hour <= 20 ) {
+    echo "Good Evening";
+}
+else if ( $Hour > 20 || $Hour < 4 ) {
+    echo "Good Night";
+}
+?>
+
+
+</body>
+</html>
+
